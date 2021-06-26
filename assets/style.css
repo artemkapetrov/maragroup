@@ -4,7 +4,7 @@ body,html {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background: rgb(12, 2, 29);
+    background: rgb(12, 2, 29)
 }
 
 .menu {
@@ -168,9 +168,18 @@ hr {
     width: 20%;
 }
 
+#op1 {
+    width: 60%;
+}
+
+#op5 {
+    width: 50%;
+}
+
 .about{
     width: 50%;
     border-radius: 5px;
+    z-index: 2;
 }
 
 @keyframes popup {
@@ -210,12 +219,14 @@ hr {
     background: rgb(255, 255, 255);
     border-radius: 5px;
     width: 50%;
+    height: 78%;
     padding: 2%;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     transition: 1s ease;
     z-index: 1;
+
 }
 
 .up .about {
@@ -236,12 +247,7 @@ hr {
 }
 
 .hidden {
-    opacity: 0;
     margin-top: 70%;
-}
-
-.opacity {
-    opacity: 0;
 }
 
 
@@ -384,12 +390,8 @@ hr {
 }
 
 @media (max-height:1367px) {
-    .up {
-        height: 50%;
-    }
-
     .hidden {
-        display: none;
+        margin-top: 200%;
     }
 }
 
