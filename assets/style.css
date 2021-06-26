@@ -122,6 +122,11 @@ hr {
     height: 2px;
 }
 
+.nondec {
+    color: white;
+    text-decoration: none;
+}
+
 .block img {
     z-index: 0;
 }
