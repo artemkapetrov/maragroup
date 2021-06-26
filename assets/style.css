@@ -124,7 +124,7 @@ hr {
 
 .nondec {
     color: white;
-    text-decoration: none;
+    z-index: 1;
 }
 
 .block img {
