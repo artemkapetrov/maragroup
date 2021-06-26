@@ -193,3 +193,50 @@ hr {
 .uslugianim img {
     animation: popup 2s ease;
 }
+
+.up {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 50%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: 1s ease;
+}
+
+.up .about {
+    width: 70%;
+}
+
+.up img {
+    transition: 5s;
+}
+
+.up p a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.up p {
+    margin-top: 10%;
+}
+
+.hidden {
+    opacity: 0;
+    margin-top: 70%;
+}
+
+.opacity {
+    opacity: 0;
+}
+
+.interact {
+    text-decoration: none;
+    color: white;
+}
