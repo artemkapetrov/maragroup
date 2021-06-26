@@ -7,6 +7,245 @@
     <title>Maragroup</title>
     <link rel="stylesheet" href="/assets/style.css">
     <link rel="shortcut icon" href="/assets/2336319.png">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body,html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+    position: absolute;
+    top: 17%;
+    right: 1.7%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    width: 10%;
+}
+
+.button {
+    margin: 5%;
+    color: rgb(132, 251, 255);
+    text-decoration: none;
+    padding: 5%;
+    transition: .5s;
+}
+
+.button:hover {
+    background: rgb(132, 251, 255);
+    color: white;
+}
+
+.phone {
+    position: absolute;
+    color: white;
+    font-size: 18px;
+    top: 2%;
+    right: 3%;
+    display: flex;
+    text-align: right;
+}
+
+.phone2 {
+    position: absolute;
+    color: white;
+    font-size: 12px;
+    top: 9%;
+    right: 3%;
+    display: flex;
+    text-align: right;
+}
+
+.logo {
+    position: absolute;
+    font-size: 12px;
+    color: white;
+    top: 2%;
+    left: 2%;
+    display: flex;
+}
+
+.logo2 {
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 1.9%;
+    display: flex;
+}
+
+.word {
+    position: absolute;
+    color: white;
+    top: 20%;
+    left: 1.9%;
+}
+
+.uslugi {
+    padding: 2%;
+    background: rgb(12, 2, 29);
+    color:white;
+}
+
+.block {
+    border: 2px solid rgb(132, 251, 255);
+    width: 15%;
+    height: 15%;
+    padding: 1%;
+
+}
+
+.block img {
+    width: 50%;
+    filter: invert(100);
+}
+
+.blocks {
+    display: flex;
+    text-align: center;
+    width: 100%;
+}
+
+
+#one {
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid rgb(132, 251, 255);
+    width: 15%;
+    height: 15%;
+    padding: 1%;
+}
+
+.marginob {
+    margin-top: 3%;
+}
+
+hr {
+    margin-top: 3%;
+    color: rgb(132, 251, 255);
+    background-color: rgb(132, 251, 255);
+    border: none;
+    height: 2px;
+}
+
+.image {
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    background-image: url(https://software-expert.ru/wp-content/uploads/2019/11/2019061716471455463_1462348313_9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: inset 0 0 85px 120px rgb(9, 2, 22);
+}
+
+.texts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-left: -15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon {
+    filter: invert(100);
+    width: 7%;
+    margin: 3%;
+}
+
+.text {
+    margin-left: -7%;
+    margin-right: auto;
+}
+
+.qr {
+    width: 20%;
+}
+
+.about{
+    width: 50%;
+    border-radius: 5px;
+}
+
+@keyframes popup {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
+
+.uslugianim {
+    padding: 2%;
+    background: rgb(12, 2, 29);
+    color:white;
+}
+
+.uslugianim h2 {
+    animation: popup 2s ease;
+}
+
+.uslugianim p {
+    animation: popup 2s ease;
+}
+
+.uslugianim img {
+    animation: popup 2s ease;
+}
+
+.up {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 10%;
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 50%;
+    padding: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    transition: 1s ease;
+}
+
+.up .about {
+    width: 70%;
+}
+
+.up img {
+    transition: 5s;
+}
+
+.up p a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+.up p {
+    margin-top: 10%;
+}
+
+.hidden {
+    opacity: 0;
+    margin-top: 70%;
+}
+
+.opacity {
+    opacity: 0;
+}
+    </style>
 </head>
 <body>
     <div class="logo">
@@ -35,24 +274,48 @@
     <div class="image">
         <img src="/assets/2336319.png" alt="" style="opacity: 0;">
     </div>
+    <div class="up hidden" id="u1">
+        <h4>Заправка автокондиционеров</h4>
+        <h5>Заправка кондиционера авто – порядок выполнения процедуры. В большинстве случаев заправка кондиционеров автомобилей на специальном оборудовании практически не требует вмешательства со стороны человека. Прежде чем отдать свою машину мастеру, советуем спросить у него, какое оборудование использоваться для извлечения фреона из системы, и будут ли его в дальнейшем применять в кондиционере. Так вы сможете сэкономить немало денежных средств. Один из этапов обслуживания кондиционера – это антибактериальная очистка, которую желательно выполнять регулярно.</h5>
+        <img id="op1" src="https://auto-tech.center/wp-content/uploads/filling.jpg" alt="" class="about opacity">
+        <p><a href="javascript:void(0);" class="close" id="c1">Закрыть</a></p>
+    </div>
+    <div class="up hidden" id="u2">
+        <h4>Заправка рефрижераторов</h4>
+        <h5>Рефрижератор - это система искусственного охлаждения, холодильно-отопительная установка, монтируемая на изотермический фургон и служащая для поддержания внутри него температуры в интервале от −30 °С до +12 °С.</h5>
+        <img id="op2" src="https://perevozka24.ru/img/ck_upload/gruzovik-refrizherator.jpg" alt="" class="about opacity">
+        <p><a href="javascript:void(0);" class="close" id="c2">Закрыть</a></p>
+    </div>
+    <div class="up hidden" id="u3">
+        <h4>Ремонт автокондиционеров</h4>
+        <h5>Автокондиционер – разновидность системы кондиционирования воздуха, устанавливаемая в автомобиле и позволяющая охлаждать воздух в салоне, а также очищать его от влаги и посторонних запахов.</h5>
+        <img id="op3" src="https://avto.news/wp-content/uploads/2019/11/klimat_remont.jpeg.webp" alt="" class="about opacity">
+        <p><a href="javascript:void(0);" class="close" id="c3">Закрыть</a></p>
+    </div>
+    <div class="up hidden" id="u4">
+        <h4>Электрик</h4>
+        <h5>Автоэлектрик – это профессионально подготовленный специалист, знающий, как обнаружить и ликвидировать неполадки в электрооборудовании легковых и грузовых авто.</h5>
+        <img id="op4" src="https://mir-automobil.ru/wp-content/uploads/2020/03/avtoelektrik-moskva.jpg" alt="" class="about opacity">
+        <p><a href="javascript:void(0);" class="close" id="c4">Закрыть</a></p>
+    </div>
     <div class="uslugi">
         <h2>УСЛУГИ АВТОСЕРВИСА</h2>
         <div class="blocks">
             <div class="block" style="margin-right: auto;">
                 <img src="/assets/259981.png" alt="">
-                <h6>Заправка автокондиционеров</h6>
+                <h6><a href="javascript:void(0);"class="interact" id="b1">Заправка автокондиционеров</a></h6>
             </div>
             <div class="block" id="one">
                 <img src="/assets/snowflake.png" alt="">
-                <h6>Заправка рефрижераторов</h6>
+                <h6><a href="javascript:void(0);" class="interact" id="b2">Заправка рефрижераторов</a></h6>
             </div>
             <div class="block" id="one">
                 <img src="/assets/939160.png" alt="">
-                <h6>Ремонт автокондиционеров</h6>
+                <h6><a href="javascript:void(0);" class="interact" id="b3">Ремонт автокондиционеров</a></h6>
             </div>
             <div class="block" style="margin-left: auto;">
                 <img src="/assets/2214024.png" alt="">
-                <h6>Электрик</h6>
+                <h6><a href="javascript:void(0);" class="interact" id="b4">Электрик</a></h6>
             </div>
         </div>
         <hr>
@@ -81,5 +344,6 @@
         </div>
     </div>
     </div>
+<script src="/maragroup/assets/script.js"></script>
 </body>
 </html>
