@@ -4,6 +4,12 @@ var b3 = document.getElementById("b3")
 var b4 = document.getElementById("b4")
 var b5 = document.getElementById("b5")
 
+var i1 = document.getElementById("i1")
+var i2 = document.getElementById("i2")
+var i3 = document.getElementById("i3")
+var i4 = document.getElementById("i4")
+var i5 = document.getElementById("i5")
+
 var u1 = document.getElementById("u1")
 var u2 = document.getElementById("u2")
 var u3 = document.getElementById("u3")
@@ -42,6 +48,36 @@ b4.addEventListener("click",
 )
 
 b5.addEventListener("click",
+    function(){
+        u5.classList.remove("hidden")
+    }
+)
+
+i1.addEventListener("click",
+    function(){
+        u1.classList.remove("hidden")
+    }
+)
+
+i2.addEventListener("click",
+    function(){
+        u2.classList.remove("hidden")
+    }
+)
+
+i3.addEventListener("click",
+    function(){
+        u3.classList.remove("hidden")
+    }
+)
+
+i4.addEventListener("click",
+    function(){
+        u4.classList.remove("hidden")
+    }
+)
+
+i5.addEventListener("click",
     function(){
         u5.classList.remove("hidden")
     }
