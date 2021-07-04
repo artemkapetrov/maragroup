@@ -52,6 +52,14 @@ body,html {
     text-align: right;
 }
 
+.hit {
+    text-align: center;
+}
+
+.hit p {
+    margin-top: -2%;
+}
+
 .logo {
     position: absolute;
     font-size: 12px;
