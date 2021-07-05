@@ -9,7 +9,7 @@ body,html {
 
 .menu {
     position: absolute;
-    top: 17%;
+    top: 15%;
     right: 1.7%;
     display: flex;
     flex-direction: column;
@@ -161,19 +161,18 @@ hr {
     display: flex;
     flex-direction: column;
     text-align: right;
-    margin-left: -15%;
     justify-content: center;
     align-items: center;
 }
 
 .icon {
     filter: invert(100);
-    width: 7%;
-    margin: 3%;
+    width: 12%;
+    margin: 7%;
 }
 
 .text {
-    margin-left: -7%;
+    margin-left: 2%;
     margin-right: auto;
 }
 
@@ -181,6 +180,27 @@ hr {
     width: 20%;
 }
 
+
+.fancyb {
+    width: 30%;
+    border-radius: 10px;
+    transition: 0.5s;
+    animation: popup 2s;
+}
+
+.fancybox__image {
+    border-radius: 10px;
+}
+
+.images img {
+    width: 3%;
+    margin: 5px;
+    filter: invert(100);
+}
+
+.images {
+    align-items: center;
+}
 #op1 {
     width: 60%;
 }
