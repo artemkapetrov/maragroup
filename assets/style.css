@@ -441,6 +441,10 @@ hr {
         display: none;
     }
 
+    .images img {
+        width: 10%;
+    }
+
     .texts {
         display: flex;
         justify-content: center;
@@ -455,6 +459,7 @@ hr {
         justify-content: center;
         align-items: center;
         margin-left: 0;
+        display: none;
     }
     
     .icon {
