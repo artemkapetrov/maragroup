@@ -139,6 +139,49 @@ hr {
     z-index: 0;
 }
 
+.gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+
+@keyframes appear {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0;
+    }
+}
+
+@keyframes appear2 {
+    from {
+        margin-right: -100%;
+    }
+
+    to {
+        margin-right: 0;
+    }
+}
+
+.inner {
+    margin-top: 2%;
+    overflow: hidden;
+}
+
+.inner a img{
+    width: 30%;
+}
+
+#inner1 {
+    animation: appear 2s;
+}
+
+#inner2 {
+    animation: appear2 2s;
+}
+
 .image {
     padding: 1%;
     display: flex;
